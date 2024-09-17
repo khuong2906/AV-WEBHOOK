@@ -87,7 +87,9 @@ The `config.json` file contains settings for the webhook and screenshot behavior
    - **Purpose**: Contains the URL(s) of the Discord webhook(s) to which messages are sent.  
    - **Example**: 
      ```json
-     "discord_webhook": ["https://discord.com/api/webhooks/YOUR_WEBHOOK_URL"]
+     "discord_webhook": [
+        "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL"
+        ]
      ```
 
 2. **`send_webhook_delay`**  
@@ -119,7 +121,10 @@ The `config.json` file contains settings for the webhook and screenshot behavior
    - **Purpose**: Discord IDs of players to ping in the webhook message, used if `ping_players` is set to `true`.  
    - **Example**: 
      ```json
-     "player_id_to_ping": ["1234567890"]
+     "player_id_to_ping": [
+        "1234567890",
+        "6969696969"
+        ]
      ```
 
 6. **`resend_timeout`**  
