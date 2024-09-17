@@ -128,4 +128,4 @@ while True:
         logging.error(f"Error: {er}")
         time.sleep(1)
     
-    time.sleep(0.2)
+    time.sleep(0.1)
