@@ -144,3 +144,9 @@ The `config.json` file contains settings for the webhook and screenshot behavior
      ```
 
 --- 
+
+# Image Examples
+
+![image](https://github.com/user-attachments/assets/7e38ee30-3340-4d6b-8d25-83429cde3c3d)
+
+---
