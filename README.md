@@ -7,9 +7,13 @@ This script sends notifications via Discord webhooks when you finish a game in *
 
 ## Ingame Settings
 
-Graphics: Max (Roblox Setting) -> Can be lowered after 1 run, but must always be max on the first attempt
-Low Detail Mode: On (In-Game Anime Vanguard Setting)
-Camera Shake: Off (In-Raid Anime Vanguard Setting. Will not let you change this in the lobby)
+Graphics: Max (Roblox Setting)  
+Can be lowered after 1 run, but must always be max on the first attempt  
+
+Low Detail Mode: On (In-Game Anime Vanguard Setting)  
+
+Camera Shake: Off (In-Raid Anime Vanguard Setting. Will not let you change this in the lobby)  
+
 UI Scale: 1
 
 ---
