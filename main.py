@@ -42,16 +42,17 @@ if show_full_screen == False:
 
 def capture_window(window_title):
     try:
-        if show_full_screen == True:
+        if show_full_screen:
             screenshot = ImageGrab.grab()
         else:
             roblox_window = next((win for win in gw.getWindowsWithTitle(window_title)), None)
-            if roblox_window:
+            if roblox_window and roblox_window.isActive:
+                logging.info("Found Roblox Window!")
                 bbox = (roblox_window.left + 10, roblox_window.top + 10, roblox_window.right - 10, roblox_window.bottom - 10)
                 screenshot = ImageGrab.grab(bbox)
             else:
                 logging.warning(f"Window titled '{window_title}' not found. Using placeholder image.")
-                screenshot = Image.open('placeholder.png') 
+                screenshot = Image.open('placeholder.png')
         return screenshot
     except Exception as e:
         logging.error(f"Error capturing window '{window_title}': {e}. Using placeholder image.")
