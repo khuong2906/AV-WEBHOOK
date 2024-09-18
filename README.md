@@ -11,7 +11,7 @@ To run the script, the following Python libraries (wrappers) are required. Each 
 Run the following command to install all required libraries:
 
 ```bash
-pip install pillow pyautogui opencv-python discord-webhook pygetwindow
+pip install pillow opencv-python discord-webhook pygetwindow pyautogui
 ```
 
 ---
