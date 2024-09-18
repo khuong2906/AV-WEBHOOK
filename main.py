@@ -76,7 +76,7 @@ webhooks_sent = 1
 while True:
     try:
         for image_file in image_prototypes:
-            button_location = pyautogui.locateCenterOnScreen(image_file, confidence=0.7)
+            button_location = pyautogui.locateCenterOnScreen(image_file, confidence=0.75)
             if button_location:
                 logging.info(f"Found image: '{image_file}' at {button_location}")
                 try:
