@@ -1,14 +1,14 @@
-import logging
-from PIL import Image, ImageGrab # pillow
-from io import BytesIO
-import json
-import os
-import time
-from discord_webhook import DiscordWebhook, DiscordEmbed
 try:
     import pyautogui # cause of opencv for confidence
+    import logging
+    from PIL import Image, ImageGrab # pillow
+    from io import BytesIO
+    import json
+    import os
+    import time
+    from discord_webhook import DiscordWebhook, DiscordEmbed
 except ImportError:
-    os.system("pip install pyautogui opencv-python")
+    os.system("pip install pillow opencv-python discord-webhook pygetwindow pyautogui")
 
 logging.basicConfig(
     level=logging.INFO,
