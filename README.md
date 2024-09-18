@@ -3,6 +3,17 @@
 # AV-Finish-Webhook
 This script sends notifications via Discord webhooks when you finish a game in *Anime Vanguards*.
 
+---
+
+## Ingame Settings
+
+Graphics: Max (Roblox Setting) -> Can be lowered after 1 run, but must always be max on the first attempt
+Low Detail Mode: On (In-Game Anime Vanguard Setting)
+Camera Shake: Off (In-Raid Anime Vanguard Setting. Will not let you change this in the lobby)
+UI Scale: 1
+
+---
+
 ## Required Python Libraries
 
 To run the script, the following Python libraries (wrappers) are required. Each library’s purpose and installation method are summarized below.
@@ -11,7 +22,7 @@ To run the script, the following Python libraries (wrappers) are required. Each 
 Run the following command to install all required libraries:
 
 ```bash
-pip install pillow opencv-python discord-webhook pygetwindow pyautogui
+pip install pillow pyautogui opencv-python discord-webhook pygetwindow
 ```
 
 ---
@@ -87,9 +98,7 @@ The `config.json` file contains settings for the webhook and screenshot behavior
    - **Purpose**: Contains the URL(s) of the Discord webhook(s) to which messages are sent.  
    - **Example**: 
      ```json
-     "discord_webhook": [
-        "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL"
-        ]
+     "discord_webhook": ["https://discord.com/api/webhooks/YOUR_WEBHOOK_URL"]
      ```
 
 2. **`send_webhook_delay`**  
@@ -121,10 +130,7 @@ The `config.json` file contains settings for the webhook and screenshot behavior
    - **Purpose**: Discord IDs of players to ping in the webhook message, used if `ping_players` is set to `true`.  
    - **Example**: 
      ```json
-     "player_id_to_ping": [
-        "1234567890",
-        "6969696969"
-        ]
+     "player_id_to_ping": ["1234567890"]
      ```
 
 6. **`resend_timeout`**  
@@ -144,9 +150,3 @@ The `config.json` file contains settings for the webhook and screenshot behavior
      ```
 
 --- 
-
-# Image Examples
-
-![image](https://github.com/user-attachments/assets/7e38ee30-3340-4d6b-8d25-83429cde3c3d)
-
----
