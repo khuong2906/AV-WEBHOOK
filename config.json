@@ -1,13 +1,13 @@
 {
     "discord_webhook": [
-        "https://discord.com/api/webhooks/"
+        "https://discord.com/api/webhooks/1285813016075440170/lljsFfBdo5iMY8XWZOpQ-W2PRDniZnuA2nVwkWXbymQS0EZRgMcFDlgEV0X3mmUMhviv"
     ],
     "send_webhook_delay": 0.1,
     "screenshot_delay": 0.5,
     "ping_players": true,
     "player_id_to_ping": [
-        "1234567890"
+        "912973882372276296"
     ],
     "resend_timeout": 100,
-    "screenshot_full_screen": false
+    "screenshot_full_screen": true
 }
